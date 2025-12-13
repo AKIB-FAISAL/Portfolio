@@ -40,7 +40,7 @@ export const Navbar = () => {
         </a>
 
         {/* DESKTOP MENU */}
-        <div className="hidden md:flex space-x-8 text-xl">
+        <div className="hidden md:flex space-x-7 text-xl">
           {navItems.map((item, key) => (
             <a
               key={key}
