@@ -34,8 +34,8 @@ export const ThemeToggle = () => {
   return (
     <div
       className={cn(
-        "fixed z-50 flex items-center gap-3",
-        "top-5 right-5",
+        "fixed z-50 flex items-center gap-2",
+        "top-5 right-4",
         "max-sm:bottom-5 max-sm:top-auto"
       )}
     >
