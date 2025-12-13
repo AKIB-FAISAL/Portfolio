@@ -3,10 +3,10 @@ import { edu } from "../constants.js";
 
 export const Education = () => {
   return (
-    <section id="education" className="py-12 px-4 sm:px-6 md:px-16 font-sans text-white">
+    <section id="education" className="py-12 px-4 sm:px-6 md:px-16 font-sans text-foreground">
       {/* Title */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold">EDUCATION</h2>
+        <h2 className="text-3xl font-bold text-foreground">EDUCATION</h2>
         <div className="w-20 h-1 bg-purple-500 mx-auto mt-2"></div>
       </div>
 
@@ -40,9 +40,9 @@ export const Education = () => {
                 />
               </div>
 
-              <h3 className="font-semibold text-lg md:text-xl mb-1">{item.institution}</h3>
-              <p className="text-sm md:text-base text-gray-300 mb-2">{item.year}</p>
-              <p className="text-gray-400 text-sm md:text-base">{item.desc}</p>
+               <h3 className="font-semibold text-lg md:text-xl text-foreground mb-1">{item.institution}</h3>
+          <p className="text-sm md:text-base text-foreground/70 mb-2">{item.year}</p>
+          <p className="text-foreground/60 text-sm md:text-base">{item.desc}</p>
             </div>
           </div>
         ))}
