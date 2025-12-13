@@ -5,17 +5,20 @@ import { cn } from "@/lib/utils";
 export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // initial theme load
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
+
     if (storedTheme === "dark") {
-      setIsDarkMode(true);
       document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
     } else {
       document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
     }
   }, []);
 
+  // toggle handler
   const toggleTheme = () => {
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
@@ -29,18 +32,38 @@ export const ThemeToggle = () => {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
+    <div
       className={cn(
-        "fixed top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300 bg-card",
-        "focus:outline-hidden"
+        "fixed z-50 flex items-center gap-3",
+        "top-5 right-5",
+        "max-sm:bottom-5 max-sm:top-auto"
       )}
     >
+      {/* Theme Icon */}
       {isDarkMode ? (
         <Sun className="h-6 w-6 text-yellow-300" />
       ) : (
-        <Moon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
+        <Moon className="h-6 w-6 text-foreground" />
       )}
-    </button>
+
+      {/* Toggle Switch */}
+      <button
+        onClick={toggleTheme}
+        className={cn(
+          "relative w-11 h-6 rounded-full border border-border",
+          "bg-card transition-colors duration-300",
+          "focus:outline-hidden"
+        )}
+        aria-label="Toggle theme"
+      >
+        <span
+          className={cn(
+            "absolute top-0.5 left-0.5 h-5 w-5 rounded-full",
+            "bg-background transition-transform duration-300",
+            isDarkMode && "translate-x-5"
+          )}
+        />
+      </button>
+    </div>
   );
 };
