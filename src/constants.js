@@ -111,7 +111,7 @@ export const edu = [
         id: 1,
         img: nub,
         institution: "Northern University Bangladesh",
-        year: "2026",
+        year: "2026 -present",
         pursuing: "pursuing B.Sc in CSE",
         desc: "Currently pursuing a Bachelor's degree in Computer Science and Engineering (CSE) at Northern University Bangladesh, gaining a solid understanding of algorithms, data structures, and software development methodologies.",
 
@@ -123,7 +123,7 @@ export const edu = [
         id: 2,
         img: mun,
         institution: "Munshiganj Polytechnic Institute",
-        year: "2022 – Present",
+        year: "2022 – 2026",
         grade: "3.18 CGPA",
         desc: "Completed Diploma in Computer Science and Technology (CST) at Munshiganj Polytechnic Institute, building a strong foundation in programming, web development, and software engineering principles.",
     },

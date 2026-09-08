@@ -92,7 +92,7 @@ I am a MERN stack developer specializing in front-end development, with solid ex
                             href="/Akib_Resume.pdf" // Replace with your resume file
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex-1 md:flex-none text-center bg-linear-to-r from-[#8245ec] to-[#a855f7] text-white py-3 px-6 rounded-full font-semibold transition transform hover:scale-105 min-w-[150px]"
+                            className="flex-1 md:flex-none text-center bg-linear-to-r from-[#8245ec] to-[#a855f7] text-white py-3 px-6 rounded-full font-semibold transition transform hover:scale-105 min-w-37.5"
                         >
                            📥Download Resume
                         </a>
@@ -100,7 +100,7 @@ I am a MERN stack developer specializing in front-end development, with solid ex
                         {/* Get In Touch */}
                         <a
                             href="#contact"
-                            className="flex items-center justify-center flex-1 md:flex-none text-center bg-blue-600 text-white py-3 px-6 rounded-full font-semibold transition transform hover:bg-blue-700 min-w-[150px]"
+                            className="flex items-center justify-center flex-1 md:flex-none text-center bg-blue-600 text-white py-3 px-6 rounded-full font-semibold transition transform hover:bg-blue-700 min-w-37.5"
                         >
                             Get In Touch
                         </a>
@@ -108,7 +108,7 @@ I am a MERN stack developer specializing in front-end development, with solid ex
                         {/* View My Work */}
                         <a
                             href="#projects"
-                            className="flex-1 md:flex-none text-center bg-gray-200 text-gray-800 py-3 px-6 rounded-full font-semibold transition transform hover:bg-gray-300 min-w-[150px]"
+                            className="flex-1 md:flex-none text-center bg-gray-200 text-gray-800 py-3 px-6 rounded-full font-semibold transition transform hover:bg-gray-300 min-w-37.5"
                         >
                             View My Work
                         </a>
