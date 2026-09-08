@@ -30,7 +30,7 @@ export const Navbar = () => {
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between relative">
 
         {/* LOGO */}
         <a className="text-xl font-bold text-primary flex items-center" href="#about">
@@ -52,7 +52,7 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* MOBILE MENU OVERLAY */}
+        {/* MOBILE MENU TOGGLE */}
         <button
           className="md:hidden text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open menu"}
@@ -60,26 +60,29 @@ export const Navbar = () => {
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
+
+        {/* MOBILE DROPDOWN (does not cover the page) */}
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden",
+            "absolute md:hidden left-0 right-0 top-full mt-2",
+            "bg-card border border-border rounded-xl shadow-lg",
+            "flex flex-col overflow-hidden",
+            "transition-all duration-300 origin-top",
             isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+              ? "opacity-100 scale-y-100 pointer-events-auto"
+              : "opacity-0 scale-y-95 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-y-8">
-            {navItems.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
-                onClick={() => setIsMenuOpen(false)}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
+          {navItems.map((item, key) => (
+            <a
+              key={key}
+              href={item.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="px-6 py-3 text-foreground/80 hover:text-primary hover:bg-background/50 transition-colors duration-200 border-b border-border last:border-b-0"
+            >
+              {item.name}
+            </a>
+          ))}
         </div>
 
       </div>
