@@ -26,7 +26,7 @@ import form from './assets/ProjectImg/form.png';
 import euro from './assets/edu/euro.jpg';
 import mun from './assets/edu/mun.jpg';
 import nub from './assets/edu/nub.jpg';
-import metagoogle from './assets/SkillLogo/meta&google.png';
+import metagoogle from './assets/SkillLogo/metagoogle.jpg';
 export const SkillsInfo = [
     {
         title: 'Frontend',
