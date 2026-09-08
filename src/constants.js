@@ -25,6 +25,7 @@ import movie from './assets/ProjectImg/movie.png';
 import form from './assets/ProjectImg/form.png';
 import euro from './assets/edu/euro.jpg';
 import mun from './assets/edu/mun.jpg';
+import nub from './assets/edu/nub.jpg';
 export const SkillsInfo = [
     {
         title: 'Frontend',
@@ -106,15 +107,26 @@ export const projects = [
 export const edu = [
     {
         id: 1,
+        img: nub,
+        institution: "Northern University Bangladesh",
+        year: "2026",
+        pursuing: "pursuing B.Sc in CSE",
+        desc: "Currently pursuing a Bachelor's degree in Computer Science and Engineering (CSE) at Northern University Bangladesh, gaining a solid understanding of algorithms, data structures, and software development methodologies.",
+
+    },
+    
+    
+    
+    {
+        id: 2,
         img: mun,
         institution: "Munshiganj Polytechnic Institute",
         year: "2022 – Present",
-        //   grade: "3.30 CGPA",
-        desc: "Currently pursuing a Diploma in Computer Science and Technology (CST) at Munshiganj Polytechnic Institute, building a strong foundation in programming, web development, and software engineering principles.",
+        grade: "3.18 CGPA",
+        desc: "Completed Diploma in Computer Science and Technology (CST) at Munshiganj Polytechnic Institute, building a strong foundation in programming, web development, and software engineering principles.",
     },
-
-    {
-        id: 2,
+     {
+        id: 3,
         img: euro,
         institution: "European IT Institute (intern: MERN Stack Devlopment)",
         year: "2 Sept - 2 dec 2025",
