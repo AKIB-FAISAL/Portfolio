@@ -26,6 +26,7 @@ import form from './assets/ProjectImg/form.png';
 import euro from './assets/edu/euro.jpg';
 import mun from './assets/edu/mun.jpg';
 import nub from './assets/edu/nub.jpg';
+import metagoogle from './assets/SkillLogo/meta&google.png';
 export const SkillsInfo = [
     {
         title: 'Frontend',
@@ -47,7 +48,7 @@ export const SkillsInfo = [
         ],
     },
     {
-        title: 'Tools',
+        title: 'Skills & Tools',
         skills: [
             { name: 'Wordpress', logo: wordpress },
             { name: 'Elementor', logo: elementor },
@@ -56,6 +57,7 @@ export const SkillsInfo = [
             { name: 'Postman', logo: postmanLogo },
             { name: 'Compass', logo: compass },
             { name: 'Figma', logo: figmaLogo },
+            { name: 'Meta & Google Ads', logo: metagoogle },
         ],
     },
 ];

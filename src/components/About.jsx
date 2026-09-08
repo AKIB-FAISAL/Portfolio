@@ -35,7 +35,7 @@ export const About = () => {
                         {/* Always Brand Color */}
                         <span className="text-[#8245ec]">
                             <Typewriter
-                                words={['Frontend Developer', 'Web Developer', 'MERN Stack Devloper', 'Programmer']}
+                                words={['Frontend Developer', 'Web Developer', 'MERN Stack Devloper','Meta & Google Ads Specialist', 'Programmer']}
                                 loop={0}
                                 cursor
                                 cursorStyle="|"
@@ -81,7 +81,7 @@ export const About = () => {
 
                     {/* About Me Paragraph (Fixed for Two Themes) */}
                     <p className="text-base sm:text-lg md:text-lg text-foreground mb-10 mt-8 leading-relaxed">
-                        I am a MERN stack developer specializing in front-end development, with solid experience in back-end, APIs, databases, and CMS. I focus on creating clean, efficient, and interactive web applications that provide great user experiences.
+I am a MERN stack developer specializing in front-end development, with solid experience in back-end, APIs, databases, and WordPress/CMS. I'm also a Meta &amp; Google Ads specialist, building clean, efficient web apps that drive real results.
                     </p>
 
                     {/* Resume Button - Remains Good (White Text on Gradient) */}
